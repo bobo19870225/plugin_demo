@@ -11,7 +11,7 @@ import top.guuguo.plugin_base.utils.ext.logI
 import java.lang.reflect.Method
 
 
-class PluginInstrumentation(var instrumentation:Instrumentation): Instrumentation() {
+class PluginInstrumentation(private var instrumentation:Instrumentation): Instrumentation() {
 
     @SuppressLint("DiscouragedPrivateApi")
     fun execStartActivity(
